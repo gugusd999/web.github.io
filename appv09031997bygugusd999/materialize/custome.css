@@ -1,0 +1,228 @@
+html, div {
+   scroll-behavior: smooth;
+ }
+ .brand-logo{
+   text-transform: capitalize;
+ }
+
+ .menu-icon div:nth-child(1){
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .size-40{
+   font-size: 40px !important;
+ }
+
+ .menu-icon{
+   display: grid;
+   grid-template-columns: 50px calc(100% - 50px);
+ }
+
+ .waves-block{
+   display: block !important;
+   height: auto !important;
+   padding: 0 !important;
+ }
+
+ .waves-block .card-content{
+   padding: 5px !important;
+ }
+
+ .waves-block .card-content p,
+ .waves-block .card-content small
+ {
+   display: block;
+   text-align: left;
+   padding: 0 !important;
+   margin: 0 !important;
+ }
+
+ .waves-block .card-content small{
+   margin-top: -10px !important;
+ }
+
+ .galery-images {
+   width: 100%;
+   height: 250px;
+   background-image: var(--bg-image);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+ }
+
+ .galery-images-cover::before {
+     content: "";
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     border-radius: 15px;
+     background: rgb(2,114,210);
+     opacity: 0.5;
+     background-image: background: -webkit-linear-gradient(rgba(2,114,210,1) 0%, rgba(125,160,188,1) 100%);
+     background-image: background: -o-linear-gradient(rgba(2,114,210,1) 0%, rgba(125,160,188,1) 100%);
+     background-image: background: linear-gradient(rgba(2,114,210,1) 0%, rgba(125,160,188,1) 100%);
+  }
+
+  .galery-images-cover > div{
+    z-index: 10;
+  }
+
+ .galery-images-cover {
+   position: relative;
+   width: 100%;
+   height: 250px;
+   background-image: var(--bg-image);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   color: white !important;
+ }
+
+.galery-top{
+   position: relative;
+}
+
+.favorite-galery{
+   position: absolute;
+   bottom: 50px;
+   right: 30px;
+}
+
+.favorite-galery > .material-icons{
+   font-size: 35px;
+}
+
+.action-card{
+   color: black;
+}
+
+p{
+   padding: 3px 0 !important;
+   margin: 0 !important;
+}
+
+
+.form-group label{
+   text-transform: uppercase;
+ }
+
+ .promotion{
+   display: flex;
+   min-height: 400px;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .pd-10{
+   padding: 10px !important;
+ }
+
+.nav-content{
+  height: auto !important;
+}
+
+.nav-content .input-field,
+.nav-content .material-icons{
+  margin-top: -5px;
+}
+
+.nav-content input{
+	width: calc(100% - 100px)!important;;
+	height: auto !important;
+	padding: 10px 50px!important;;
+}
+
+.nav-content .input-field{
+	height: auto !important;
+}
+
+.input-field input[type="search"]{
+  border-bottom: none !important;
+	border: 1px solid white !important;
+}
+
+.grid-bar{
+  display: grid;
+  grid-template-columns: 25% 65% 10%;
+}
+
+.carousel-item,
+.card,
+.card-content
+{
+	border-radius: 15px !important;
+}
+
+.card-content
+{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
+}
+
+.mt-1{
+  margin-top: 10px;
+}
+
+.mt-2{
+  margin-top: 20px;
+}
+
+.mt-3{
+  margin-top: 30px;
+}
+
+.mt-4{
+  margin-top: 40px;
+}
+
+.mt-5{
+  margin-top: 50px;
+}
+
+.margin-content{
+  margin: 20px 72px;
+}
+
+.margin-content-2{
+  margin: 0 72px;
+}
+
+@media screen and (max-width: 600px){
+  .margin-content{
+    margin: 20px 20px;
+  }
+
+  .margin-content-2{
+    margin: 0 20px;
+  }
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.bg-gradient-dark-blue{
+  background: rgb(2,114,210) !important;
+  background: -webkit-linear-gradient(rgba(2,114,210,1) 0%, rgba(0,126,233,1) 100%) !important;
+  background: -o-linear-gradient(rgba(2,114,210,1) 0%, rgba(0,126,233,1) 100%) !important;
+  background: linear-gradient(rgba(2,114,210,1) 0%, rgba(0,126,233,1) 100%) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-boundered{
+  border-radius: 20px;
+}
+
+.hide-on-med-and-down button{
+  padding: 5px 10px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  margin: 0 5px;
+}

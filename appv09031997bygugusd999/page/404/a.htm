@@ -1,0 +1,60 @@
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p404 {
+        position: fixed;
+        background-color: #339af9;
+        width: 600px;
+        display: grid;
+        grid-template-columns: auto auto;
+        left: calc(50% - (600px / 2));
+        top: 100px;
+        border-radius: 10px;
+        padding: 20px;
+        color: white;
+    }
+
+
+    .p404 div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p404 div:nth-child(2) {
+        display: block;
+        border-left: 1px solid white;
+        padding-left: 20px;
+    }
+
+    .p404 div:nth-child(1) h1 {
+        font-size: 70px;
+    }
+
+    .p404 div:nth-child(2) h3 {
+        padding: 0;
+        margin: 3px 0;
+        font-size: 16px;
+    }
+</style>
+<div class="text-center">
+    <div class="p404">
+        <div style='padding: 10px;'>
+            <div style="display: block;">
+                <h1>
+                    404!
+                </h1>
+                <span style="font-size: 16px;" id="times-load-away">11 November 2020 11:32 WIB</span>
+            </div>
+        </div>
+        <div class="text-left">
+            <h1 class="mt-3">
+                Sorry!
+            </h1>
+            <h3>The Page You're Looking For</h3>
+            <h3>Was Not Found</h3>
+        </div>
+    </div>
+</div>
