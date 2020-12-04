@@ -328,9 +328,23 @@ callMaster('jquery', function () {
                               this.page = this.helper.page;
                               this.html = this.helper.html;
                               this.page.innerHTML = '';
-                              this.page.innerHTML = this.html.join('');
+                              this.page.innerHTML += '<div style="';
+                              this.page.innerHTML += 'position: fixed;';
+                              this.page.innerHTML += 'display: block;';
+                              this.page.innerHTML += 'width: 100vw;';
+                              this.page.innerHTML += 'height: 100vh;';
+                              this.page.innerHTML += 'overflow: hidden;';
+                              this.page.innerHTML += 'overflow-y: auto;';
+                              this.page.innerHTML += 'top: 0;';
+                              this.page.innerHTML += 'left: 0;';
+                              this.page.innerHTML += '">';
+                              this.page.innerHTML += this.html.join('');
+                              this.page.innerHTML += '</div>';
                               $('.loader').css('display', 'none');
                               window.scrollTo(0, 0);
+                              if ('scrollRestoration' in history) {
+                                history.scrollRestoration = 'manual';
+                              }
                             }
                           }
                             var dd = new Controller();
