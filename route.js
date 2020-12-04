@@ -8,7 +8,8 @@ function callMaster(a, func) {
   }
   var head = document.getElementsByTagName('head')[0];
   var script = document.createElement('script');
-  script.src = `./appv09031997bygugusd999/${a}.js?v=${datesMM()}`;
+  script.src = `./appv09031997bygugusd999/${a}.js`;
+  // script.src = `./appv09031997bygugusd999/${a}.js?v=${datesMM()}`;
   head.appendChild(script);
 
   script.onload = () => {
@@ -71,7 +72,8 @@ callMaster('jquery', function () {
               function loadScript() {
 
                 var script = document.createElement('script');
-                script.src = `${baseUrl + rootDir + a[saatIniUrutan]}.js?v=` + times;
+                script.src = `${baseUrl + rootDir + a[saatIniUrutan]}.js`;
+                // script.src = `${baseUrl + rootDir + a[saatIniUrutan]}.js?v=` + times;
                 document.getElementById('loadjs').appendChild(script);
                 script.onload = () => {
                   saatIniUrutan += 1;
@@ -107,7 +109,8 @@ callMaster('jquery', function () {
                 function loadScript() {
 
                   var script = document.createElement('script');
-                  script.src = `${baseUrl + rootDir + a[saatIniUrutan]}.js?v=` + times;
+                  script.src = `${baseUrl + rootDir + a[saatIniUrutan]}.js`;
+                  // script.src = `${baseUrl + rootDir + a[saatIniUrutan]}.js?v=` + times;
                   document.getElementById('loadjs').appendChild(script);
                   script.onload = () => {
                     saatIniUrutan += 1;
@@ -158,7 +161,8 @@ callMaster('jquery', function () {
                   var linkElement = document.createElement("link");
                   linkElement.setAttribute("rel", "stylesheet");
                   linkElement.setAttribute("type", "text/css");
-                  linkElement.setAttribute("href", `${baseUrl + rootDir + a[saatIniUrutan]}.css?v=` + timess);
+                  linkElement.setAttribute("href", `${baseUrl + rootDir + a[saatIniUrutan]}.css`);
+                  // linkElement.setAttribute("href", `${baseUrl + rootDir + a[saatIniUrutan]}.css?v=` + timess);
                   document.getElementsByTagName("head")[0].appendChild(linkElement);
 
                   linkElement.onload = () => {

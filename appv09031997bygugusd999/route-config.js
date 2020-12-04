@@ -7,7 +7,6 @@ const dataCssAdmin = [
   'css/custome/1'
 ];
 
-
 const dataJsAdmin = [
   'bootstrap4/popper.min',
   'bootstrap4/bootstrap.min'
@@ -23,7 +22,6 @@ root.err = function () {
     })
   })
 }
-
 
 root.verify = function (a) {
 
