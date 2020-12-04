@@ -3,22 +3,14 @@
 
 const dataCssAdmin = [
   'font/css/all',
-  'admin/css/sb-admin-2.min',
-  'plugin/datepicker/dist/css/bootstrap-datepicker3.min',
-  'admin/vendor/datatables/dataTables.bootstrap4.min',
+  'bootstrap4/bootstrap.min',
+  'css/custome/1'
 ];
 
 
 const dataJsAdmin = [
-  'admin/vendor/bootstrap/js/bootstrap.bundle.min',
-  'admin/vendor/jquery-easing/jquery.easing.min',
-  'admin/js/sb-admin-2.min',
-  'admin/vendor/chart.js/Chart.min',
-  'admin/vendor/datatables/jquery.dataTables.min',
-  'admin/vendor/datatables/dataTables.bootstrap4.min',
-  'plugin/datepicker/dist/js/bootstrap-datepicker.min',
-  'script/wp-logout',
-  'plugin/jquery/numberonly'
+  'bootstrap4/popper.min',
+  'bootstrap4/bootstrap.min'
 ]
 
 root.err = function () {
